@@ -1,0 +1,38 @@
+/* Combined css for skeleton shell*/
+
+.cb-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.cb-container .primary-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+}
+
+.cb-container .primary-container.initial {
+    left: 0;
+}
+
+.cb-container .primary-container:not(.initial) {
+    animation: push-left 0.25s ease-out forwards;
+}
+
+.cb-container .primary-container.move {
+    animation: push-right 0.25s ease-out forwards;
+}
+
+.cb-container .root-app {
+    overflow: hidden;
+    max-height: 99vh;
+    position: relative;
+    background-color: #e5e8ed;
+    height: 100%;
+    padding-bottom: 60px;
+}

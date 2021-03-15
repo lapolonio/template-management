@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio</title>
+    <link rel="stylesheet" href="./cb-styles/main-header.css">
+    <link rel="stylesheet" href="./cb-styles/sidebar.css">
+    <link rel="stylesheet" href="./cb-styles/user-dropdown.css">
+    <link rel="stylesheet" href="./cb-styles/skeleton.css">
+    <link rel="stylesheet" href="../node_modules/@clarabridge/unified-icons/dist/main.css">
+</head>
+<body>
+<div class="cb-container">
+    <div class="cb-sidebar">
+        <p class="cb-logo">
+            <img src="./clarabridge-logo-white.png" alt="Clarabridge CX Studio"/>
+        </p>
+        <ul id="sidebar-loader" style="display: none;"></ul>
+        <ul style="display: block;">
+            <li class="cb-sidebar-nav-item">
+                <a href="#/dashboards">Lorem ipsum dolor</a>
+            </li>
+            <li class="cb-sidebar-nav-item">
+                <a href="#/dashboards">Duis aute irure dolor</a>
+            </li>
+            <li class="cb-sidebar-nav-item">
+                <a href="#/dashboards">Excepteur sint occaecat</a>
+            </li>
+        </ul>
+    </div>
+    <div class="primary-container initial">
+        <div class="cb-header">
+            <ul class="header-left">
+                <li class="sidebar-toggle">
+                    <div class="toggle-label-ctr">
+                        <div class="sidebar-cover"></div>
+                        <input
+                                class="secret-input-2"
+                                onfocus="document.getElementsByClassName('primary-container')[0].classList.toggle('move')
+                                    && document.getElementsByClassName('primary-container')[0].classList.remove('initial')
+                                    || document.getElementsByClassName('sidebar-cover')[0].classList.toggle('show')"
+                                onblur="document.getElementsByClassName('primary-container')[0].classList.remove('move')
+                                  || document.getElementsByClassName('sidebar-cover')[0].classList.remove('show')">
+
+                        <a class="en-icon-layer" onclick="this.parentElement.children[1].focus()"></a>
+                    </div>
+                </li>
+                <li>
+                    <a title="" href="#/dashboards">Lorem ipsum covetus</a>
+                </li>
+            </ul>
+            <div class="header-right">
+                <div class="header-element">
+                    <div>
+                        <a class="en-icon-info"></a>
+                    </div>
+                </div>
+                <div class="header-element">
+                    <div class="cover"></div>
+                    <input
+                            class="secret-input"
+                            onfocus="this.parentElement.children[3].classList.toggle('show') && this.parentElement.children[0].classList.toggle('show');"
+                            onblur="this.parentElement.children[3].classList.toggle('show') || this.parentElement.children[0].classList.toggle('show');"
+                    />
+
+                    <a class="user-menu dropdown-toggle" onclick="this.parentElement.children[1].focus()">
+                        <img class="user-avatar"
+                             src="https://secure.gravatar.com/avatar/d70dbb898384a613e3c098e7cd0ca3af?d=mm&r=pg&s=30"/>
+                        <i class="en-icon-triangle-down"></i>
+                    </a>
+
+                    <ul class="cb-dropdown-menu">
+                        <li>
+                            <a class="menu-item">
+                                <span class="right en-icon-cog"></span>
+                                <div class="name"><strong>Duis aute irure and last name should it be very long</strong>
+                                </div>
+                                <small>Personal Settings</small>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="menu-item">Excepteur sint</a>
+                        </li>
+                        <li>
+                            <a class="menu-item">Et harum quidem</a>
+                        </li>
+                        <li>
+                            <a class="menu-item">Quis autem vel</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="menu-item">Temporibus autem</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="root-app">
+            <!-- Add root app here -->
+        </div>
+    </div>
+</div>
+</body>
+</html>

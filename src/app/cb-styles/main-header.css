@@ -1,0 +1,154 @@
+.cb-header {
+    background-color: #445460;
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(147, 161, 171, 0.3);
+    box-sizing: border-box;
+    display: flex !important;
+    justify-content: space-between !important;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    height: 60px;
+    width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.cb-header .header-left {
+    padding-left: 0;
+    height: 50px;
+    float: left;
+    margin: 0;
+}
+
+.cb-header .header-left .sidebar-toggle {
+    font-size: 21px;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 60px;
+}
+
+.cb-header .header-left .sidebar-toggle .sidebar-cover {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    z-index: 2;
+    display: none;
+    opacity: 0;
+    cursor: pointer;
+}
+.cb-header .header-left .sidebar-toggle .sidebar-cover.show{
+    display: block;
+}
+
+.cb-header ul.header-left {
+    display: flex !important;
+    list-style: none
+}
+
+.cb-header .header-left li {
+    height: 60px;
+    min-width: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 60px;
+}
+
+.cb-header a {
+    cursor: pointer;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cb-header a:hover {
+    color: #ffffff;
+}
+
+.en-icon-layer:before {
+    content: "\2261";
+}
+
+.cb-header .en-icon-info {
+    font-size: 16px;
+}
+
+.en-icon-info:before {
+    content: " \25F4";
+}
+
+.cb-header .en-icon-triangle-down {
+    font-size: 12px;
+}
+
+.en-icon-triangle-down:before {
+    content: " \25F4";
+}
+
+.cb-header .header-right {
+    height: 60px;
+    border-color: inherit;
+    align-items: center !important;
+    display: flex !important;
+}
+
+.cb-header .header-right>.header-element {
+    border-left: 1px solid rgba(147, 161, 171, 0.3);
+    border-color: inherit;
+    display: flex !important;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+}
+
+.cb-header .header-right>.header-element:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.cb-header .header-right .header-element .user-avatar {
+    border-radius: 30px;
+}
+
+.cb-header .user-menu.dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.cb-header .user-menu.dropdown-toggle:after {
+    display: none;
+}
+
+.cb-header .user-menu.dropdown-toggle>.en-icon-triangle-down {
+    margin-left: 5px;
+}
+
+.cb-header .secret-input, .secret-input-2 {
+    border: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.cb-header .cover {
+    position: absolute;
+    height: 60px;
+    width: 80px;
+    display: none;
+    cursor: pointer;
+}
+
+.cb-header .cover.show {
+    display: block;
+}
+
+
+
+/*remove this storybook testing thing*/
+
+body {
+    margin: 0;
+}
